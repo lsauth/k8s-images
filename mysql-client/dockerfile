@@ -1,0 +1,3 @@
+FROM alpine:latest
+RUN sed -i 's/dl-cdn.alpinelinux.org/mirrors.aliyun.com/g' /etc/apk/repositories
+RUN apk update && apk add bash git curl  wget  net-tools  busybox-extras iproute2  tcpdump htop iftop strace procps sysstat vim tree nmap mysql-client lsblk nethogs nfs-utils rsync glances lvm2 && apk cache clean
