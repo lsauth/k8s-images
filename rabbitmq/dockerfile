@@ -1,1 +1,1 @@
-From rabbitmq:management
+From docker.io/rabbitmq:management
